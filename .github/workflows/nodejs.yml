@@ -16,7 +16,5 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm start
-        npm test
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag node-webapp:$(date +%s)
